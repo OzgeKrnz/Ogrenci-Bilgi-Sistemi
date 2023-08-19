@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{1F0F0CA0-EA01-4651-88C1-6FCF051FFE2F}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.StajProjesi PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ClassesController.cs">
+    <Files>
+      <File FileName="Controllers/ClassesController.cs" Line="1" Column="1" />
+      <File FileName="Views/Classes/Index.cshtml" />
+      <File FileName="Controllers/Classes1Controller.cs" />
+      <File FileName="Data/ClassesDbContext.cs" />
+      <File FileName="Data/Classes1DbContext.cs" Line="34" Column="5" />
+      <File FileName="Models/SecondTerm.cs" />
+      <File FileName="Models/FirstTerm.cs" Line="15" Column="4" />
+      <File FileName="Migrations/ClassesDb/20230813125550_AddFirstTermToDb.cs" Line="1" Column="1" />
+      <File FileName="Migrations/Classes1Db/20230813130019_AddSecondTermClassesToDb.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="66" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StajProjesi" expanded="True">
+            <Node name="StajProjesi" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="ClassesController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Classes" expanded="True" />
+                <Node name="StudentInfo" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

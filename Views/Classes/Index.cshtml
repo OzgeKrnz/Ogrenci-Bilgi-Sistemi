@@ -1,0 +1,35 @@
+@model List<FirstTerm>
+@{
+    Layout = "_Layout";
+}
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+<div class="align-content-center" >
+    <table class="table table-hover table-bordered" id="my-table" style="height: 900px" >
+        <tbody>
+        <thead>
+        <th scope="col">Güz Dönemi</th>
+        <th scope="col">Vize</th>
+        <th scope="col">Final</th>
+        <th scope="col">Bütünleme</th>
+        </thead>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td> @obj.Classname</td>
+                <td> @obj.Vize</td>
+                <td> @obj.FinalNt</td>
+                @{
+                    if (obj.Bütünleme == 0)
+                    {
+                        obj.Bütünleme = null;
+                    }
+                }
+                <td> @obj.Bütünleme</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</html>

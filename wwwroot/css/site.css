@@ -1,0 +1,75 @@
+html {
+  font-size: 14px;
+}
+.card-body{
+  padding: 10px 20px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.flex-child{
+  flex: max-content;
+  position: relative;
+  z-index: 1;
+  margin-left: 380px;
+
+}
+
+.stdIcon{
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin-left: 60px;
+  
+}
+
+.container{
+  position: absolute;
+  z-index:2 ;
+  padding-left: 482px;
+  margin-top: 230px;
+}
+
+#my-table{
+  position: absolute;
+  bottom: 340px;
+  right: 2px;
+  left: 60px;
+  height: 900px;
+  
+}
+
+
+.img1{
+  position: absolute;
+  z-index: 2;
+  bottom: 340px;
+  right: 240px;
+  
+  
+}
+
+.img2{
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 240px;
+
+}

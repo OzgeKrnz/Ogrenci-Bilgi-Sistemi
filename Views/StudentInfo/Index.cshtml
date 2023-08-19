@@ -1,0 +1,37 @@
+
+@model List<StudentInfo>
+@{
+    Layout = "_Layout";
+}
+<!DOCTYPE html>
+<html >
+
+    <div class="card text-bg-light mb-3 " style="max-width: 25rem; max-height: 40rem">
+        <div class="card-header">Öğrenci Bilgileri</div>
+        <div class="card-body">
+            <table class="table">
+                <tbody>
+                @foreach (var obj in Model.OrderBy(u => u.StId))
+                {
+                    <thead class="thead-dark">
+                    <tr class="table-light"><th colspan="3"> Ad Soyad:<td>@obj.StName</td></tr>
+                    <tr class="table-light"><th colspan="3">Fakülte/Bölüm:<td> @obj.Bolum</td></tr>
+                    <tr class="table-light"><th colspan="3">Öğrenci Numarası:<td>@obj.StId</td></tr>
+                    <tr class="table-light"><th colspan="3">Genel Not Ortalaması:<td>@obj.Gno</td></tr>
+                    <tr class="table-light"><th colspan="3">Email Adresi:<td>@obj.StEmail</td></tr>
+                    </thead>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</html>
+
+
+
+
+
+
+
+
+

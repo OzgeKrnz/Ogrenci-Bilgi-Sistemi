@@ -1,0 +1,75 @@
+<body>
+<div class="flex-container">
+    <div class="flex-child">
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-1">
+                                <li class="nav-item">
+                                    <a asp-controller="" asp-action="" class="nav-link text-bg-light border-2 m-2">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="" asp-action="" class="nav-link text-bg-light border-2 m-2">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="" asp-action="" class="nav-link text-bg-light border-2 m-2">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="" asp-action="" class="nav-link text-bg-light border-2 m-2">Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        }
+        <div class="flex-child ">
+            <img src="Images/uniIcon.jpeg" alt="university photo" width="600px" height="600px"/>
+        </div>
+    </div>
+    </div>
+</body>
+
+
+
+<body>
+<div class="flex-container">
+    <div class="flex-child">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column m-2">
+                    <img src="Images/user.png" class="stdIcon " />
+                    <a asp-controller="StudentInfo" asp-action="Index" class="nav-link text-bg-light border-2 m-2">
+                        <i class="bi bi-person-circle"></i> Öğrenci Bilgileri
+                    </a>
+                    <a asp-controller="Classes" asp-action="Index" class="nav-link text-bg-light border-2 m-2">
+                        <i class="bi bi-journal-bookmark"></i> Aldığı Dersler
+                    </a>
+                    <a asp-controller="Classes" asp-action="Index" class="nav-link text-bg-light border-2 m-2">
+                        <i class="bi bi-pen"></i> Dönem Notları
+                    </a>
+                    <a asp-controller="AcademicCalendar" asp-action="Index" class="nav-link text-bg-light border-2 m-2">
+                        <i class="bi bi-calendar2"></i> Akademik Takvim
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="flex-child ">
+        <img src="Images/uniIcon.jpeg" alt="university photo" width="600px" height="600px"/>
+    </div>
+</div>
+
+</body>
